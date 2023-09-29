@@ -1,4 +1,4 @@
-// ! ecrire 1 prog
+	// ! ecrire 1 prog
     /** 
      * nom function transform();
      * @param array 
@@ -10,29 +10,34 @@
      *       else { nothing}
      */
 
-   const array =  function nbArray(){
-
-        let array = []; 
-        for(i = 0; i < array.length; i++) {
-             array.push(i);
-        }
-        return array;
-    }
-    
-    // console.log('creation array de nb : ', array);
+	
     function transform(params) {
         const arg = [...params];
         for ( let i = 0 ; i < arg.length ; i++ ) {
-            if(i % 3 === 0) {
-            console.log('fizz', arg[i]);
+			if (i % 3 === 0 && i % 5 === 0) {
+				console.log('fizzbuzz', arg[i]);
+			}
+            else if(i % 3 === 0) {
+				console.log('fizz', arg[i]);
             }
             else if (i % 5 === 0){
-                console.log('buzz', arg[i]);
+				console.log('buzz', arg[i]);
             }
             else {
                 console.log('nothing', arg[i]);
             }
     }
 }
+console.log('transform argument tab 1 : ');
+transform([3,5]);
+console.log('transform argument tab 2 : ');
+transform([0,15]);
+console.log('transform argument tab 3 : ');
+transform([1, 2, 3, 4, 5]);
+console.log('transform argument tab 4 : ');
+transform([115, 90, 99, 100, 5421, 667]);
+console.log('transform argument tab 5 : ');
+transform([]);
 
-transform([3,15,7,8, 25]);
+
+
