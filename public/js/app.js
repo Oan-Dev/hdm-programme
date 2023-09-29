@@ -28,16 +28,16 @@
             }
     }
 }
-console.log('transform argument tab 1 : ');
-transform([3,5]);
-console.log('transform argument tab 2 : ');
-transform([0,15]);
-console.log('transform argument tab 3 : ');
-transform([1, 2, 4, 5]);
-console.log('transform argument tab 4 : ');
-transform([115, 90, 99, 100, 5421, 667]);
-console.log('transform argument tab 5 : ');
-transform([]);
+// console.log('transform argument tab 1 : ');
+// transform([3,5]);
+// console.log('transform argument tab 2 : ');
+// transform([0,15]);
+// console.log('transform argument tab 3 : ');
+// transform([1, 2, 4, 5]);
+// console.log('transform argument tab 4 : ');
+// transform([115, 90, 99, 100, 5421, 667]);
+// console.log('transform argument tab 5 : ');
+// transform([]);
 
 
 
