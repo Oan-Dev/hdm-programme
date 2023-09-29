@@ -14,19 +14,26 @@
     function transform(params) {
         const arg = [...params];
         for ( let i = 0 ; i < arg.length ; i++ ) {
-			if (i % 3 === 0 && i % 5 === 0) {
+			if (arg[i] % 3 === 0 && i % 5 === 0) {
 				console.log('fizzbuzz', arg[i]);
 			}
-            else if(i % 3 === 0) {
+            else if(arg[i] % 3 === 0) {
 				console.log('fizz', arg[i]);
             }
-            else if (i % 5 === 0){
+            else if (arg[i]% 5 === 0){
 				console.log('buzz', arg[i]);
             }
             else {
                 console.log('nothing', arg[i]);
             }
     }
+	// for (let i = 0; i < arg.length; i++) {
+	// 	if (i % 3 === 0 && i % 5 === 0) console.log("FizzBuzz",arg[i]);
+	// 	else if (i % 3 == 0) console.log("Fizz",arg[i]);
+	// 	else if (i % 5 == 0) console.log("Buzz",arg[i]);
+	// 	else console.log('Nothing',arg[i]);
+	// }
+
 }
 console.log('transform argument tab 1 : ');
 transform([3,5]);
